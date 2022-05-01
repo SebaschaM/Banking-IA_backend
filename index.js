@@ -7,7 +7,6 @@ const { dbConnection } = require('./database/db.js');
 const app = express();
 dbConnection();
 app.use(cors());
-app.use(express.json());
 
 
 app.listen(process.env.PORT, () => {
