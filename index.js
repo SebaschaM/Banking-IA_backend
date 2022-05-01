@@ -9,11 +9,6 @@ dbConnection();
 app.use(cors());
 app.use(express.json());
 
-/*
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/testimonial', require('./routes/testimonial'));
-app.use('/api/appointment', require('./routes/appointment'));*/
-
 
 app.listen(process.env.PORT, () => {
   console.log(`Runnning on port ${process.env.PORT}`);
