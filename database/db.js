@@ -1,12 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const dbConnection = async () => {
   try {
     await mongoose.connect(process.env.CONNECT);
-    console.log('Successful connection'); //Confirmation
+    console.log("Successful connection");
   } catch (error) {
     console.log(error);
-    throw new Error('Error connection');
+    throw new Error("Error connection");
   }
 };
 
